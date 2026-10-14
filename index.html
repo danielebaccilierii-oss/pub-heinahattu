@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pub Heinähattu — Rock, Punk & Craft Taps · Vaasankatu, Kallio, Helsinki</title>
+<meta name="description" content="Pub Heinähattu — “Heinis” — on Vaasankatu 23, Kallio. Rock and punk pub with exclusive craft beers on tap, gigs and DJ nights. Open till 2 AM in the heart of Helsinki nightlife.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BarOrPub",
+  "name": "Pub Heinähattu",
+  "alternateName": "Heinis",
+  "servesCuisine": "Pub",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Vaasankatu 23",
+    "addressLocality": "Helsinki",
+    "postalCode": "00510",
+    "addressCountry": "FI"
+  },
+  "openingHours": "Mo-Su 14:00-02:00",
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.2", "reviewCount": "192" }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Permanent+Marker&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blk:#0d0d0d; --punk:#e8e4da; --red:#e0342b; --tape:#f4f0e6;
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--blk);color:var(--punk);padding-bottom:84px;background-image:radial-gradient(rgba(255,255,255,.04) 1px,transparent 1px);background-size:22px 22px}
+.mono{font-family:'Rubik Mono One',sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+/* topbar */
+.topbar{position:sticky;top:0;z-index:60;background:rgba(13,13,13,.92);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:3px solid var(--red)}
+.logo{font-family:'Rubik Mono One';font-size:15px;text-transform:uppercase;color:var(--punk)}
+.logo em{font-family:'Permanent Marker';font-style:normal;color:var(--red);font-size:17px;margin-left:6px;text-transform:none}
+.lang{background:transparent;border:2px solid var(--punk);color:var(--punk);font-weight:800;font-size:12px;padding:5px 12px;border-radius:0;cursor:pointer;letter-spacing:.06em;transform:rotate(-2deg)}
+/* hero — torn flyer */
+.hero{padding:64px 0 48px;position:relative}
+.flyer{background:var(--tape);color:#111;padding:30px 24px 34px;transform:rotate(-1.6deg);box-shadow:8px 10px 0 rgba(224,52,43,.85),0 24px 50px rgba(0,0,0,.6);position:relative;clip-path:polygon(0% 3%,4% 0%,12% 2%,22% 0%,31% 3%,44% 1%,55% 3%,67% 0%,78% 2%,89% 0%,97% 3%,100% 8%,99% 18%,100% 30%,98% 45%,100% 60%,98% 75%,100% 88%,97% 97%,88% 100%,76% 98%,63% 100%,50% 98%,38% 100%,26% 98%,14% 100%,5% 97%,0% 90%,2% 76%,0% 62%,2% 48%,0% 33%,2% 18%)}
+.flyer .k{font-family:'Permanent Marker';color:var(--red);font-size:15px;margin-bottom:10px;transform:rotate(-1deg)}
+.flyer h1{font-family:'Rubik Mono One';font-size:clamp(32px,10vw,58px);line-height:.95;text-transform:uppercase}
+.flyer h1 .rd{color:var(--red)}
+.flyer p{margin:16px 0 22px;font-weight:700;font-size:15px;color:#333;max-width:40ch;line-height:1.5}
+.flyer .meta{display:flex;gap:14px;flex-wrap:wrap;font-family:'Rubik Mono One';font-size:11px;text-transform:uppercase}
+.flyer .meta span{background:#111;color:var(--tape);padding:6px 10px;transform:rotate(-1deg)}
+.stamp{position:absolute;right:14px;top:-18px;background:var(--red);color:#fff;font-family:'Permanent Marker';font-size:15px;padding:10px 14px;transform:rotate(8deg);box-shadow:0 4px 10px rgba(0,0,0,.4)}
+/* sections */
+.kick{color:var(--red);font-family:'Permanent Marker';font-size:17px;margin-bottom:8px;transform:rotate(-1.2deg)}
+h2{font-family:'Rubik Mono One';font-size:clamp(26px,8vw,40px);margin-bottom:22px;text-transform:uppercase;line-height:1}
+h2 .rd{color:var(--red)}
+.about p{font-size:15.5px;line-height:1.7;margin-bottom:14px;color:#c9c4b8}
+/* on tap */
+.tap{background:#161616;border:2px dashed #3a3a3a;padding:22px;transform:rotate(.6deg)}
+.taprow{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:11px 0;border-bottom:1px dashed #333;font-weight:600}
+.taprow:last-child{border-bottom:0}
+.taprow b{font-size:15px}
+.taprow .tp{font-family:'Rubik Mono One';font-size:13px;color:var(--red);white-space:nowrap}
+.taprow small{display:block;color:#8f8a7e;font-size:12px;font-weight:600;margin-top:2px}
+.tapnote{font-size:12px;color:#8f8a7e;margin-top:12px;font-style:italic}
+/* gigs */
+.gig{display:flex;gap:14px;background:var(--tape);color:#111;padding:16px;margin-bottom:12px;transform:rotate(-.8deg);box-shadow:5px 5px 0 rgba(224,52,43,.7)}
+.gig:nth-child(even){transform:rotate(.9deg)}
+.gig .date{flex:0 0 62px;text-align:center;font-family:'Rubik Mono One';background:#111;color:var(--tape);padding:8px 4px;align-self:flex-start}
+.gig .date b{display:block;font-size:19px;color:var(--red)}
+.gig .date span{font-size:10px;text-transform:uppercase}
+.gig h3{font-family:'Rubik Mono One';font-size:15px;text-transform:uppercase;margin-bottom:4px}
+.gig p{font-size:12.5px;font-weight:600;color:#444;line-height:1.45}
+.fb{margin-top:18px;text-align:center}
+.fbtn{display:inline-block;background:#1877f2;color:#fff;text-decoration:none;font-weight:800;font-size:14px;padding:13px 26px;border-radius:8px;box-shadow:4px 4px 0 rgba(0,0,0,.5)}
+/* reviews */
+.rev{background:#161616;border:2px dashed #3a3a3a;padding:18px;margin-bottom:12px;transform:rotate(-.4deg)}
+.rev .stars{color:var(--red);font-size:18px;letter-spacing:2px}
+.rev b{display:block;margin:6px 0 4px;font-size:15px}
+.rev p{font-size:13.5px;color:#a8a396;line-height:1.5}
+.score{text-align:center;margin-bottom:22px}
+.score .big{font-family:'Rubik Mono One';font-size:46px;color:var(--red)}
+.score .cnt{font-size:12px;font-weight:800;color:#8f8a7e;text-transform:uppercase;letter-spacing:.1em}
+/* hours + map */
+.hrow{display:flex;justify-content:space-between;padding:13px 4px;border-bottom:1px dashed #3a3a3a;font-weight:600;font-size:15px}
+.hrow.today{color:var(--red);font-weight:800}
+.hrow.today::before{content:"● ";font-size:10px;vertical-align:2px}
+.mapbox{margin-top:26px;border:3px solid var(--punk);overflow:hidden;transform:rotate(-.6deg);box-shadow:8px 8px 0 var(--red)}
+.mapbox iframe{width:100%;height:260px;border:0;display:block;filter:grayscale(1) invert(.92) contrast(.95)}
+.addr{text-align:center;margin-top:16px;font-weight:700;font-size:15px}
+.addr small{display:block;color:#8f8a7e;font-weight:600;margin-top:3px}
+/* contact */
+.contact{text-align:center}
+.cbtns{display:flex;flex-direction:column;gap:12px;margin-top:24px}
+.cbtn{background:var(--red);color:#fff;text-decoration:none;font-family:'Rubik Mono One';font-size:14px;text-transform:uppercase;padding:16px;border:0;transform:rotate(-.6deg);box-shadow:5px 5px 0 rgba(244,240,230,.9)}
+.cbtn.ghost{background:transparent;border:2px solid var(--punk);color:var(--punk);box-shadow:5px 5px 0 rgba(224,52,43,.8)}
+/* sticky */
+.stickybar{position:fixed;left:0;right:0;bottom:0;z-index:70;display:flex;background:#000;border-top:3px solid var(--red)}
+.stickybar a{flex:1;text-align:center;padding:14px 4px 16px;text-decoration:none;color:var(--punk);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.04em}
+.stickybar a + a{border-left:1px dashed #333}
+.stickybar .ico{display:block;font-size:20px;margin-bottom:3px}
+.stickybar a.wa{background:var(--red);color:#fff}
+footer{background:#000;color:#6f6a5e;text-align:center;font-size:11.5px;padding:20px 16px 100px;line-height:1.7}
+@media(min-width:640px){.cbtns{flex-direction:row;justify-content:center}.cbtn{padding:16px 34px}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="logo">Heinähattu<em>heinis</em></div>
+  <button class="lang" id="langBtn" data-en="FI" data-fi="EN" onclick="toggleLang()">FI</button>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="flyer">
+      <div class="stamp" data-en="open till 2 AM" data-fi="auki klo 2 asti">open till 2 AM</div>
+      <div class="k" data-en="Vaasankatu 23 · Kallio · no frills, all riffs" data-fi="Vaasankatu 23 · Kallio · ei teeskentelyä, vain riffejä">Vaasankatu 23 · Kallio · no frills, all riffs</div>
+      <h1 data-en="Loud beer. <span class='rd'>Louder music.</span>" data-fi="Jytkyä olutta. <span class='rd'>Vielä jytkymmät biisit.</span>">Loud beer. <span class="rd">Louder music.</span></h1>
+      <p data-en="Kallio's rock and punk living room — exclusive craft taps you won't find around the corner, gigs and DJ nights stapled to the wall. Come as you are." data-fi="Kallion rock- ja punk-olohuone — eksklusiivisia hanoja joita ei löydy kulman takaa, keikkoja ja DJ-iltoja seinällä. Tule sellaisena kuin olet.">Kallio's rock and punk living room — exclusive craft taps you won't find around the corner, gigs and DJ nights stapled to the wall. Come as you are.</p>
+      <div class="meta">
+        <span data-en="⭐ 4.2 · 192 reviews" data-fi="⭐ 4.2 · 192 arvostelua">⭐ 4.2 · 192 reviews</span>
+        <span data-en="🎸 gigs & DJs" data-fi="🎸 keikat & DJ:t">🎸 gigs & DJs</span>
+        <span data-en="🍺 exclusive taps" data-fi="🍺 eksklusiiviset hanat">🍺 exclusive taps</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="wrap">
+    <div class="kick" data-en="What is Heinis" data-fi="Mikä on Heinis">What is Heinis</div>
+    <h2 data-en="A pub with a <span class='rd'>backbone</span>" data-fi="Pubi jolla on <span class='rd'>selkäranka</span>">A pub with a <span class="rd">backbone</span></h2>
+    <p data-en="Ask anyone in Kallio: “Heinis” is where the jukebox is loud, the taps are interesting and nobody cares who you are or where you came from. Rotating craft beers — some brewed in small batches just for us — and a calendar full of bands and DJ nights." data-fi="Kysy keneltä tahansa Kalliosta: “Heinis” on se paikka jossa jukebox soi kovaa, hanat ovat mielenkiintoisia eikä ketään kiinnosta kuka olet tai mistä tulet. Vaihtuvia käsityöoluita — osa pienissä erissä juuri meille — ja kalenteri täynnä keikkoja ja DJ-iltoja.">Ask anyone in Kallio: “Heinis” is where the jukebox is loud, the taps are interesting and nobody cares who you are or where you came from. Rotating craft beers — some brewed in small batches just for us — and a calendar full of bands and DJ nights.</p>
+  </div>
+</section>
+
+<section class="tapsec">
+  <div class="wrap">
+    <div class="kick" data-en="Right now, from the tap" data-fi="Juuri nyt hanasta">Right now, from the tap</div>
+    <h2 data-en="On <span class='rd'>tap</span> now" data-fi="Hanassa <span class='rd'>nyt</span>">On <span class="rd">tap</span> now</h2>
+    <div class="tap">
+      <div class="taprow"><b>[BIRRA 1]</b><span class="tp">[PREZZO]</span></div>
+      <div class="taprow"><b>[BIRRA 2]</b><span class="tp">[PREZZO]</span></div>
+      <div class="taprow"><b>[BIRRA 3]</b><span class="tp">[PREZZO]</span></div>
+      <div class="taprow"><b>[BIRRA 4]</b><span class="tp">[PREZZO]</span></div>
+    </div>
+    <div class="tapnote" data-en="The tap list rotates constantly — this block is built to be updated in seconds, even from a phone." data-fi="Hanalista vaihtuu jatkuvasti — tämä lohko on rakennettu päivitettäväksi sekunneissa, vaikka puhelimella.">The tap list rotates constantly — this block is built to be updated in seconds, even from a phone.</div>
+  </div>
+</section>
+
+<section class="gigsec">
+  <div class="wrap">
+    <div class="kick" data-en="Upcoming noise" data-fi="Tulevaa meteliä">Upcoming noise</div>
+    <h2 data-en="Gigs & <span class='rd'>DJ nights</span>" data-fi="Keikat & <span class='rd'>DJ-illat</span>">Gigs & <span class="rd">DJ nights</span></h2>
+    <div class="gig">
+      <div class="date"><b>[DD]</b><span>[KKK]</span></div>
+      <div><h3>[ARTISTA / DJ]</h3><p>[DESCRIZIONE — es. punk night, vinyl only, free entry] [ORARIO]</p></div>
+    </div>
+    <div class="gig">
+      <div class="date"><b>[DD]</b><span>[KKK]</span></div>
+      <div><h3>[ARTISTA / DJ]</h3><p>[DESCRIZIONE] [ORARIO]</p></div>
+    </div>
+    <div class="gig">
+      <div class="date"><b>[DD]</b><span>[KKK]</span></div>
+      <div><h3>[ARTISTA / DJ]</h3><p>[DESCRIZIONE] [ORARIO]</p></div>
+    </div>
+    <div class="fb">
+      <a class="fbtn" href="https://www.facebook.com/" target="_blank" rel="noopener" data-en="📘 Full calendar on Facebook" data-fi="📘 Koko kalenteri Facebookissa">📘 Full calendar on Facebook</a>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="kick" data-en="Screams from the crowd" data-fi="Hutinaa yleisöstä">Screams from the crowd</div>
+    <h2 data-en="Punters <span class='rd'>approve</span>" data-fi="Kanta-asiakkaat <span class='rd'>tykkäävät</span>">Punters <span class="rd">approve</span></h2>
+    <div class="score">
+      <div class="big">4.2★</div>
+      <div class="cnt" data-en="192 Google reviews" data-fi="192 Google-arvostelua">192 Google reviews</div>
+    </div>
+    <div class="rev"><div class="stars">★★★★★</div><b data-en="“Best tap selection in Kallio and the gigs are always solid.”" data-fi="“Kallion paras hanavalikoima ja keikat aina hyviä.”">“Best tap selection in Kallio and the gigs are always solid.”</b></div>
+    <div class="rev"><div class="stars">★★★★☆</div><b data-en="“Real punk pub — no polished nonsense, just good beer and loud music.”" data-fi="“Oikea punk-pubi — ei kiillotettua hömppää, vain hyvää olutta ja kovaa musiikkia.”">“Real punk pub — no polished nonsense, just good beer and loud music.”</b></div>
+  </div>
+</section>
+
+<section class="hoursmap">
+  <div class="wrap">
+    <div class="kick" data-en="Get here" data-fi="Tule tänne">Get here</div>
+    <h2 data-en="Vaasankatu <span class='rd'>23</span>" data-fi="Vaasankatu <span class='rd'>23</span>">Vaasankatu <span class="rd">23</span></h2>
+    <div class="hrow today"><span data-en="Monday – Sunday" data-fi="Maanantai – sunnuntai">Monday – Sunday</span><span data-en="till 2:00 [ORARI]" data-fi="klo 2 asti [ORARI]">till 2:00 [ORARI]</span></div>
+    <div class="mapbox">
+      <iframe title="Pub Heinähattu map" src="https://maps.google.com/maps?q=Vaasankatu%2023%2C%2000510%20Helsinki&t=&z=16&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+    </div>
+    <div class="addr">
+      📍 Vaasankatu 23, 00510 Helsinki — Kallio
+      <small data-en="In the middle of Vaasankatu's bar strip" data-fi="Vaasankadun baariraidan keskellä">In the middle of Vaasankatu's bar strip</small>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <div class="kick" data-en="Talk to us" data-fi="Juttele meille">Talk to us</div>
+    <h2 data-en="See you at the <span class='rd'>bar</span>" data-fi="Nähdään <span class='rd'>tiskillä</span>">See you at the <span class="rd">bar</span></h2>
+    <div class="cbtns">
+      <a class="cbtn" href="tel:[TELEFONO]" data-en="📞 Call [TELEFONO]" data-fi="📞 Soita [TELEFONO]">📞 Call [TELEFONO]</a>
+      <a class="cbtn ghost" href="mailto:[EMAIL]" data-en="✉️ [EMAIL]" data-fi="✉️ [EMAIL]">✉️ [EMAIL]</a>
+    </div>
+  </div>
+</section>
+
+<nav class="stickybar">
+  <a href="tel:[TELEFONO]"><span class="ico">📞</span><span data-en="Call" data-fi="Soita">Call</span></a>
+  <a class="wa" href="https://wa.me/[WHATSAPP]"><span class="ico">💬</span><span data-en="WhatsApp" data-fi="WhatsApp">WhatsApp</span></a>
+  <a href="https://www.google.com/maps/dir/?api=1&destination=Vaasankatu+23,+00510+Helsinki" target="_blank" rel="noopener"><span class="ico">🧭</span><span data-en="Directions" data-fi="Reitti">Directions</span></a>
+</nav>
+
+<footer>
+  PUB HEINÄHATTU · VAASANKATU 23, HELSINKI<br>
+  <span data-en="Demo website — final tap list, gig calendar and contact details are added together with the owner." data-fi="Demosivusto — lopullinen hanalista, keikkakalenteri ja yhteystiedot lisätään yhdessä omistajan kanssa.">Demo website — final tap list, gig calendar and contact details are added together with the owner.</span>
+</footer>
+
+<script>
+function toggleLang(){
+  const html=document.documentElement;
+  const to=html.lang==='en'?'fi':'en';
+  html.lang=to;
+  document.querySelectorAll('[data-en]').forEach(el=>{
+    const t=el.dataset[to]; if(t!==undefined) el.innerHTML=t;
+  });
+  document.getElementById('langBtn').textContent = to==='en' ? 'FI' : 'EN';
+  try{localStorage.setItem('hei-lang',to)}catch(e){}
+}
+try{const s=localStorage.getItem('hei-lang'); if(s&&s!=='en'){document.documentElement.lang='en'; toggleLang();}}catch(e){}
+</script>
+</body>
+</html>
